@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:background="@drawable/moon"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:text="GAME OVER"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="269dp"
+        android:text="Aliens Killed : 0"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/scoreLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:text="Aliens Escaped : 0"
+        android:textColor="?attr/colorError"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:text="High Score: 300"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/highScoreLabel"
+        android:layout_marginBottom="246dp"
+        android:layout_alignParentBottom="true"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/playerNameEditText"
+        android:layout_marginBottom="179dp"
+        android:layout_alignParentBottom="true"
+        android:hint="Player Name"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Try Again"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/TryAgain"
+        android:layout_marginBottom="102dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:onClick="TryAgain"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Return to Menu"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Wroc"
+        android:layout_marginBottom="51dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:onClick="TryAgain"/>
+
+</RelativeLayout>

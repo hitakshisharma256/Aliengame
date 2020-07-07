@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:text="Aliens Killed: 0"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/LoseScore"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="15dp"
+        android:text="Aliens Escaped : 0"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20dp" />
+
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/frame">
+
+    <ImageView
+        android:layout_height="160dp"
+        android:layout_width="160dp"
+        android:id="@+id/gun"
+        android:layout_gravity="bottom"
+        android:src="@drawable/gun"/>
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:text="TAP TO START SHOOTING"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="30sp" />
+
+    <ImageView
+        android:layout_height="190dp"
+        android:layout_width="190dp"
+        android:id="@+id/gunshot"
+        android:layout_gravity="bottom"
+        android:src="@drawable/gunshot"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_height="190dp"
+        android:layout_width="190dp"
+        android:id="@+id/alien"
+        android:src="@drawable/alienbest"/>
+
+</FrameLayout>
+</LinearLayout>
